@@ -12,7 +12,7 @@ path = './data/treino_sinais_vitais_com_label.csv'
 data = spark.read.csv(path, header=True, inferSchema=True)
 
 # Definir as colunas de entrada e saída
-input_cols = ["pSist", "pDiast", "qPa", "pulso", "respiracao"]
+input_cols = ["qPa", "pulso", "respiracao"]
 output_col = "rotulo"
 
 # Transformar a coluna de rótulo em números
